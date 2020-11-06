@@ -24,7 +24,7 @@ function Webwrap(){
 
         {/* main center content containers  */}
         <div className={styles.contentBoxes} >
-            <div className={styles.box}>  <img className={styles.img} src={BoxImage} alt="image" />   </div>
+            <div className={styles.box}>  <img className={styles.img} src={BoxImage} alt="image"/>  </div>
             <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
             <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
             <div className={styles.box}> <img className={styles.img} src={BoxImage} alt="image" />  </div>
@@ -37,14 +37,6 @@ function Webwrap(){
             <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
             <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
 
-
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
-            <div className={styles.box} > <img className={styles.img} src={BoxImage} alt="image" />  </div>
 
           
 

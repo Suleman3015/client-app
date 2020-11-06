@@ -3,6 +3,7 @@ import './App.css';
 import WebWrap from './Components/webWrap'
 import SideBar from './Components/SideBar'
 import About from './Components/About'
+import Getit from './Components/getit'
 import {  Link ,Route ,BrowserRouter as Router,Switch} from 'react-router-dom'
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/about">
             <About />
+          </Route>
+          <Route path="/getit">
+            <Getit />
           </Route>
           <Route path="/">
             <WebWrap />
