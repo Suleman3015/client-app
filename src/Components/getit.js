@@ -13,7 +13,7 @@ function Getit(){
 
             <div className={styles.centerCont}>
             <div className={styles.extensionCont}>
-                <img height={180} className={styles.img} src={GoogleLogo} alt='image'/>
+                <img  className={styles.img} src={GoogleLogo} alt='image'/>
                 <div className={styles.starter} >
                 <h1 > 1.  Start Webwrap </h1>
                 <p> You can start using Webwrap here by clicking <a> Webwrap</a> </p>
