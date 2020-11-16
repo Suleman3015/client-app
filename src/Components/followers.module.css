@@ -8,7 +8,6 @@
   justify-content: space-around;
   /* background-color: #e6e6e6; */
   background-color: #f1f1f1;
-  width: 63%;
   margin-left: 30%;
   margin-top: 5%;
   height: 100%;
@@ -142,21 +141,97 @@
 /*  media queries */
 
 @media only screen and (max-width: 300px) {
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 225px;
+    grid-gap: 1rem;
+    justify-content: space-evenly;
+    /* background-color: #e6e6e6; */
+    background-color: #f1f1f1;
+    margin-left: 0%;
+
+    margin-top: 20%;
+    height: 100%;
+    padding: 2%;
+    /* height: calc(100vh - 10px); */
+    /* height: 100%; */
+    /* height: calc(100% - 10px); */
+  }
+
+  .boxes {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.5ch;
+  }
+
+  .boxes:hover {
+    /* margin-top: 2%;
+    margin-bottom: 1%; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 0.5ch;
+    transition: 0.1s;
+  }
+
+  .but {
+    background-color: #e16081;
+    color: white;
+    width: 130%;
+    height: 2vh;
+    font-size: 15px;
+    text-align: center;
+    padding: 10%;
+    margin-top: 15%;
+    border-radius: 10ch;
+    text-decoration: none;
+  }
+
+  .but:hover {
+    background-color: #e16081;
+    color: white;
+    width: 165%;
+    height: 2.2vh;
+    font-size: 15px;
+    text-align: center;
+    transition: 0.3s;
+    padding: 8%;
+    margin-top: 15%;
+    border-radius: 10ch;
+    text-decoration: none;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
+      0 1px 1px 0 rgba(0, 0, 0, 0.19);
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 500px) {
   .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container {
     display: grid;
-    grid-template-columns: 350px;
-    grid-gap: 0.7rem;
+    grid-template-columns: 250px;
+    grid-gap: 1rem;
     justify-content: space-evenly;
     /* background-color: #e6e6e6; */
     background-color: #f1f1f1;
-    width: 100%;
     margin-left: 0%;
-    margin-top: 30%;
+
+    margin-top: 20%;
     height: 100%;
     padding: 5%;
     /* height: calc(100vh - 10px); */
@@ -172,7 +247,6 @@
     align-items: center;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.5ch;
-    height: 10vh;
   }
 
   .boxes:hover {
@@ -187,26 +261,16 @@
       0 1px 1px 0 rgba(0, 0, 0, 0.19);
     border-radius: 0.5ch;
     transition: 0.1s;
-    height: 12vh;
-  }
-
-  .iconDiv {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    margin-right: 10%;
-    align-items: center;
-    margin-top: 9%;
   }
 
   .but {
     background-color: #e16081;
     color: white;
     width: 165%;
-    height: 1.5vh;
+    height: 2.2vh;
     font-size: 15px;
     text-align: center;
-    padding: 2%;
+    padding: 10%;
     margin-top: 15%;
     border-radius: 10ch;
     text-decoration: none;
@@ -216,7 +280,7 @@
     background-color: #e16081;
     color: white;
     width: 165%;
-    height: 3vh;
+    height: 2.2vh;
     font-size: 15px;
     text-align: center;
     transition: 0.3s;
@@ -226,128 +290,39 @@
     text-decoration: none;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
       0 1px 1px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .name {
-    font-size: 16px;
-    background-color: #ffffff;
-    color: black;
-    margin-left: 2%;
-  }
-
-  .avt {
-    background-color: #ffffff;
-    margin-right: 10%;
-    /* margin-bottom: 10%;*/
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    justify-content: center;
-  }
-
-  .prof {
-    background-color: #ffffff;
-    margin: 3%;
-    width: 100%;
-    font-size: 12px;
-    color: gray;
-  }
-
-  .table {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .table th {
-    background-color: #ffffff;
-    color: darkgrey;
-    font-size: 14px;
-  }
-
-  .table td {
-    background-color: #ffffff;
-    font-size: 14px;
-    color: gray;
-  }
-  .revFol {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 38%;
-  }
-
-  .table tr {
-    background-color: #ffffff;
   }
 }
 @media (min-width: 500px) and (max-width: 800px) {
   .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container {
     display: grid;
-    grid-template-columns: 270px 270px;
-    grid-gap: 0.7rem;
+    grid-template-columns: 250px 250px;
+    grid-gap: 0.5rem;
     justify-content: space-evenly;
     /* background-color: #e6e6e6; */
     background-color: #f1f1f1;
-    width: 100%;
     margin-left: 0%;
-    margin-top: 30%;
+
+    margin-top: 20%;
     height: 100%;
-    padding: 5%;
+    padding: 1.5%;
     /* height: calc(100vh - 10px); */
     /* height: 100%; */
     /* height: calc(100% - 10px); */
-  }
-
-  .boxes {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 0.5ch;
-    height: 10vh;
-  }
-
-  .boxes:hover {
-    /* margin-top: 2%;
-    margin-bottom: 1%; */
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
-      0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 0.5ch;
-    transition: 0.1s;
-    height: 12vh;
-  }
-
-  .iconDiv {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    margin-right: 10%;
-    align-items: center;
-    margin-top: 9%;
   }
 
   .but {
     background-color: #e16081;
     color: white;
     width: 165%;
-    height: 1.5vh;
+    height: 2.2vh;
     font-size: 15px;
     text-align: center;
-    padding: 2%;
+    padding: 10%;
     margin-top: 15%;
     border-radius: 10ch;
     text-decoration: none;
@@ -357,7 +332,7 @@
     background-color: #e16081;
     color: white;
     width: 165%;
-    height: 3vh;
+    height: 2.2vh;
     font-size: 15px;
     text-align: center;
     transition: 0.3s;
@@ -367,129 +342,40 @@
     text-decoration: none;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
       0 1px 1px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .name {
-    font-size: 16px;
-    background-color: #ffffff;
-    color: black;
-    margin-left: 2%;
-  }
-
-  .avt {
-    background-color: #ffffff;
-    margin-right: 10%;
-    /* margin-bottom: 10%;*/
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    justify-content: center;
-  }
-
-  .prof {
-    background-color: #ffffff;
-    margin: 3%;
-    width: 100%;
-    font-size: 12px;
-    color: gray;
-  }
-
-  .table {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .table th {
-    background-color: #ffffff;
-    color: darkgrey;
-    font-size: 14px;
-  }
-
-  .table td {
-    background-color: #ffffff;
-    font-size: 14px;
-    color: gray;
-  }
-  .revFol {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 38%;
-  }
-
-  .table tr {
-    background-color: #ffffff;
   }
 }
 
 @media (min-width: 800px) and (max-width: 1050px) {
   .main {
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container {
     display: grid;
-    grid-template-columns: 270px 270px;
-    grid-gap: 0.7rem;
+    grid-template-columns: 250px 250px;
+    grid-gap: 1rem;
     justify-content: space-evenly;
     /* background-color: #e6e6e6; */
     background-color: #f1f1f1;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 30%;
+    margin-left: 0%;
+
+    margin-top: 20%;
     height: 100%;
-    padding: 0%;
+    padding: 1%;
     /* height: calc(100vh - 10px); */
     /* height: 100%; */
     /* height: calc(100% - 10px); */
-  }
-
-  .boxes {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 0.5ch;
-    height: 12vh;
-  }
-
-  .boxes:hover {
-    /* margin-top: 2%;
-    margin-bottom: 1%; */
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2),
-      0 1px 1px 0 rgba(0, 0, 0, 0.19);
-    border-radius: 0.5ch;
-    transition: 0.1s;
-    height: 12vh;
-  }
-
-  .iconDiv {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    margin-right: 10%;
-    align-items: center;
-    margin-top: 9%;
   }
 
   .but {
     background-color: #e16081;
     color: white;
     width: 165%;
-    height: 1.5vh;
+    height: 2.2vh;
     font-size: 15px;
     text-align: center;
-    padding: 2%;
+    padding: 10%;
     margin-top: 15%;
     border-radius: 10ch;
     text-decoration: none;
@@ -499,7 +385,7 @@
     background-color: #e16081;
     color: white;
     width: 165%;
-    height: 3vh;
+    height: 2.2vh;
     font-size: 15px;
     text-align: center;
     transition: 0.3s;
@@ -509,61 +395,5 @@
     text-decoration: none;
     box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2),
       0 1px 1px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  .name {
-    font-size: 16px;
-    background-color: #ffffff;
-    color: black;
-    margin-left: 2%;
-  }
-
-  .avt {
-    background-color: #ffffff;
-    margin-right: 10%;
-    /* margin-bottom: 10%;*/
-  }
-
-  .profile {
-    display: flex;
-    flex-direction: column;
-    background-color: #ffffff;
-    justify-content: center;
-  }
-
-  .prof {
-    background-color: #ffffff;
-    margin: 3%;
-    width: 100%;
-    font-size: 12px;
-    color: gray;
-  }
-
-  .table {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .table th {
-    background-color: #ffffff;
-    color: darkgrey;
-    font-size: 14px;
-  }
-
-  .table td {
-    background-color: #ffffff;
-    font-size: 14px;
-    color: gray;
-  }
-  .revFol {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 38%;
-  }
-
-  .table tr {
-    background-color: #ffffff;
   }
 }
