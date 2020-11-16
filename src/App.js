@@ -5,6 +5,7 @@ import SideBar from './Components/SideBar'
 import About from './Components/About'
 import Getit from './Components/getit'
 import LeaderBoard from './Components/leaderBoard'
+import Followers from './Components/followers'
 import {  Link ,Route ,BrowserRouter as Router,Switch} from 'react-router-dom'
 
 function App() {
@@ -13,10 +14,6 @@ function App() {
 
 <Router>
 
-      
-  
-    
- 
   <Switch>
           <Route path="/sidebar">
             <SideBar />
@@ -29,6 +26,9 @@ function App() {
           </Route>
           <Route path="/leaderboard">
             <LeaderBoard />
+          </Route>
+          <Route path="/followers">
+          <Followers/>
           </Route>
           <Route path="/">
             <WebWrap />

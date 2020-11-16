@@ -59,6 +59,8 @@ function LeaderBoard(){
             <div className={styles.leaderCont} >
             <h3> Your current postion in the reviews leaderboard: #50  </h3>
             <div className={styles.contentBoxes}>
+            <div className={styles.sno}>
+            <h1> #1 </h1>
             <div className={styles.boxes} >
              <Avatar className={styles.avt} alt="Remy Sharp" src={Mani} />
              <div className={styles.profile}>
@@ -82,6 +84,7 @@ function LeaderBoard(){
 </div>
     
              
+            </div>
             </div>
 
 
